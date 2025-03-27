@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./images/MainImages/numbers_icon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number</title>
+
+    <style>
+        .main{
+            text-align: center;
+            margin-top: 50px;
+          min-height: 100vh; 
+            
+
+        }
+        .textInside{
+            color: rgb(255, 255, 255);
+
+        }
+.icon{
+    margin-top:20px;
+    margin-left:20px;
+  }
+  .main1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(16, 16, 16, 0.866)), url('./images/MainImages/numbersRandom.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+    </style>
+</head>
+<body class="main1">
+    <div class="icon"><a href="main.html"><img src="./images/MainImages/home.png"  alt="home icon"></a> </div>
+<div class="main"> <div class="textInside"> <h1 >Your Lucky Number is</h1>
+    <h2 id="new" style="font-size: 200px;">Number</h2></div>
+  
+    <script>
+    
+      const randomNum = Math.floor(Math.random() * 50) + 1;
+      
+      
+      document.getElementById("new").textContent = randomNum;
+    
+
+    </script></div>
+   
+</body>
+</html>

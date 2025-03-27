@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="images/MainImages/cookie_icon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortune Cookie</title>
+  <style>
+    .buttons{
+       margin-top: 20px;
+       padding: 16px 32px;
+       font-size: 20px;
+       border: thick solid #FFC300; 
+       border-radius: 5%;
+       background-color: #FFC300;
+
+    }
+    .buttons:hover {border-color: black;}
+  .icon{
+    margin-top:20px;
+    margin-left:20px;
+  }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color:papayawhip ;">
+  <div class="icon"><a href="main.html"><img src="./images/MainImages/home.png"  alt="home icon"></a>
+</div>
+  <div class="container mt-5 text-center">
+    <h1>Fortune Cookie</h1>
+    <img src="./images/MainImages/fortune cookie.jpg">
+    <h3>Break The Cookie</h3>
+    <button type="button"  class="buttons" onclick="cookies()">Crack Here 🔨</button>
+    <script>
+      function cookies(){
+      
+
+const sentences = [
+    "You are amazing, just as you are!",
+    "Good things are coming your way!",
+    "Focus, focus, it's your life, no one will play your role. Trust God and work hard.",
+    "Every small step leads to big successes.",
+    "Happiness is found in the little moments—enjoy them!",
+    "You are capable of achieving anything you put your mind to!",
+    "Keep smiling; the world needs your light!",
+    "Sairam and Balaji are there to help you!",
+    "Great things take time—trust the process!",
+    "You have a kind heart and a strong spirit!",
+    "Keep going, you’re making progress every day!",
+    "Your hard work will be rewarded in unexpected ways.",
+    "You are strong enough to handle anything that comes your way!",
+    "Success is not far from you—just keep believing!",
+    "Your smile can brighten someone’s entire day.",
+    "Each day is a new beginning filled with endless possibilities!",
+    "Be proud of yourself—you’ve come so far!",
+    "You are a positive force in the world!",
+    "You deserve all the happiness and joy in life.",
+    "Trust yourself—you are exactly where you need to be right now!",
+    "Your potential is limitless—embrace it!",
+    "Hardships are just stepping stones to success.",
+    "Believe in yourself even when no one else does.",
+    "One day, you’ll look back and realize how far you’ve come.",
+    "You are stronger than your struggles.",
+    "Small progress is still progress—keep moving forward.",
+    "Don’t fear failure; every mistake is a lesson.",
+    "You are loved, valued, and appreciated.",
+    "Success is built on consistency and patience.",
+    "Your dreams are valid—chase them fearlessly!",
+    "You have everything it takes to succeed.",
+    "Difficult roads lead to beautiful destinations.",
+    "Your kindness makes the world a better place.",
+    "Keep pushing forward—your breakthrough is near.",
+    "You are worthy of great things in life.",
+    "Every new day is a chance to start fresh.",
+    "Never underestimate the power of a positive mindset.",
+    "Be the reason someone smiles today.",
+    "No obstacle is too big for you to overcome.",
+    "The best is yet to come—stay hopeful!",
+    "You have a unique purpose in this world.",
+    "Trust the journey even when it’s tough.",
+    "The world needs your unique gifts and talents.",
+    "Your determination will lead you to greatness.",
+    "You are doing better than you think—keep going!",
+    "Your story is still being written—make it amazing!"
+];
+
+
+    
+    const answer = Math.floor(Math.random() * sentences.length);
+    alert (sentences[answer])
+
+      }
+    </script>
+  </div>
+</body>
+</html>

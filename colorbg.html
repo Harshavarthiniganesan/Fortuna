@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./images/MainImages/color_icon.png ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Color</title>
+    <style>
+        #changeText {
+            font-size: 50px;
+            text-align: center;
+            color: rgb(255, 254, 254);
+
+        }
+        .icon{
+    margin-top:20px;
+    margin-left:20px;
+  }
+    </style>
+</head>
+
+<body id="changeColor">
+    <div class="icon"><a href="main.html"><img src="./images/MainImages/home.png"  alt="home icon"></a>
+    </div>
+    <h2 id="changeText">Colors</h2>
+    <script>
+        const colors = ["pink", "silver", "black", "maroon", "red", "purple",
+            "green", "lime", "olive", "yellow", "navy", "blue", "teal", "aqua", "hotpink"];
+
+
+
+        function getColor() {
+            const randomNum = Math.floor(Math.random() * colors.length);
+            let randomColors = colors[randomNum];
+            document.getElementById('changeColor').style.backgroundColor = randomColors;
+            let randomColorsUppercase = randomColors.toUpperCase();
+            document.getElementById('changeText').textContent = randomColorsUppercase;
+        }
+        getColor()
+
+    </script>
+
+
+</body>
+
+</html>

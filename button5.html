@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./images/MainImages/color_icon.png">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Color</title>
+    <style>
+        .bg {
+            background-image: url(./images/MainImages/colorfulbg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+
+        }
+
+        .sie:hover {
+            background-color: #65b9e6;
+        }
+
+        .side:active {
+            transform: translateY(2px);
+            box-shadow: 0 0 2px darkslategray;
+        }
+
+        .side {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 5px;
+            font-size: 31px;
+            height: 230px;
+            width: 230px;
+
+
+            box-shadow: 0 10px 8px rgb(0, 0, 0);
+
+
+            border-radius: 50%;
+        }
+
+        .side:hover {
+            background-color: rgb(72, 249, 255);
+        }
+
+        .completeButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*vertical centered*/
+            height: 100vh;
+        }
+        .icon{
+    margin-top:20px;
+    margin-left:20px;
+  }
+    </style>
+</head>
+
+<body class="bg">
+    <div class="icon"><a href="main.html"><img src="./images/MainImages/home.png"  alt="home icon"></a>
+    </div>
+    <div class="completeButton">
+        <a href="colorbg.html"> <button class="side">Get Your Color</button>
+        </a>
+    </div>
+</body>
+
+</html>

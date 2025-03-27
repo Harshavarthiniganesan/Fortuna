@@ -1,0 +1,10 @@
+.main{
+    background-color: white;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff; 
+    border-radius: 10%;
+  }
+
